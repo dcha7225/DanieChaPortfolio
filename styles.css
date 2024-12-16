@@ -1,0 +1,290 @@
+/* Basic Reset */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ body {
+     font-family: sans-serif;
+     line-height: 1.6;
+ }
+ 
+ /* Navigation styles */
+ header {
+     position: fixed;
+     top: 0;
+     width: 100%;
+     background: #000000;
+     padding: 1rem;
+     z-index: 999;
+ }
+ 
+ nav {
+     max-width: 1000px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: left;
+ }
+ 
+ nav ul {
+     list-style: none;
+     display: flex;
+     gap: 1.5rem;
+ }
+ 
+ nav ul li a {
+     text-decoration: none;
+     color: #fff;
+     font-weight: 600;
+     transition: color 0.3s ease;
+ }
+ 
+ nav ul li a:hover {
+     color: #ffd700;
+ }
+ 
+ /* Section styles */
+ section {
+     padding: 100px 20px;
+     max-width: 1000px;
+     margin: 0 auto;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ 
+ #home {
+     background: #ffff;
+ }
+ .contact-info p {
+     margin: 5px 0;
+     font-size: 1rem;
+     color: #333;
+     line-height: 1.4;
+ }
+ 
+ .contact-info a {
+     color: #333;
+     text-decoration: none;
+ }
+ 
+ .contact-info a:hover {
+     text-decoration: underline;
+ }
+ 
+ 
+ #experiences {
+     background: #ffff;
+ }
+ 
+
+ 
+ #interests {
+     background: #ffff;
+ }
+ 
+ h1, h2 {
+     margin-bottom: 20px;
+     font-size: 3rem;
+     text-align: left
+ }
+ 
+ p {
+     max-width: 600px;
+     margin-bottom: 20px;
+ }
+ 
+ /* Smooth scrolling */
+ html {
+     scroll-behavior: smooth;
+ }
+ 
+ /* Just for visual clarity: some subtle styling */
+ hr {
+     width: 50px;
+     height: 3px;
+     background: #333;
+     border: none;
+     margin: 20px 0;
+ }
+ 
+ .headshot {
+     width: 20%; /* Adjust width as needed */
+     border-radius: 50%; /* Makes it circular if the image is square */
+     margin-bottom: 20px;
+ }
+
+
+ 
+ /* Optionally, you can adjust the h1 if needed */
+ .intro h1 {
+     margin: 0; /* Ensure no extra margins pushing items apart unintentionally */
+ }
+ #experiences {
+     background: #ffff; /* Matches the earlier styling if needed */
+     padding: 100px 20px;
+     max-width: 1000px;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ 
+ .experience-item {
+     display: flex;
+     align-items: flex-start;  /* Align text and image at the top */
+     gap: 20px;                /* Space between image and text */
+     margin-bottom: 40px;      /* Spacing between experience items */
+ }
+ 
+ .experience-item img {
+     display: block;          /* Ensure it's block-level for consistent padding */
+     padding: 10px;
+     width: 250px;              /* Adjust width as desired */
+     height: 150px;             /* Consistent height to maintain uniformity */
+     object-fit: contain;      /* Adjust how image fits if it's not square */
+     border: 1px solid #ccc;   /* Light grey border */
+     border-radius: 5px;       /* Optional: slightly rounded corners */
+ }
+ 
+ .experience-item p {
+     max-width: 100%;         /* Restrict text width if desired */
+     line-height: 1.5;
+ }
+
+ .experience-text {
+     text-align: center;
+     margin-bottom: 20px; /* Add spacing if desired */
+ }
+ 
+ .experience-text .company {
+     font-size: 1.5rem;    /* Larger font for company name */
+     font-weight: bold;
+     margin-bottom: 5px;   /* Slight spacing between company and details */
+ }
+ 
+ .experience-text .details {
+     font-size: 1rem;      /* Smaller font for role and duration */
+     color: #555;          /* Slightly lighter text color */
+ }
+ 
+
+ #projects {
+     background: #ffff;
+     padding: 100px 20px;
+     max-width: 1000px;
+     margin: 0 auto;
+ }
+ 
+
+ 
+ .project-item {
+     margin-bottom: 60px;
+ }
+ 
+ .project-title {
+     font-size: 1.5rem;
+     margin-bottom: 10px;
+     font-weight: bold;
+
+ }
+ 
+ .project-description {
+     max-width: 800px;
+     margin: 0 auto 30px auto;
+     line-height: 1.5;
+     color: #444;
+ }
+ 
+ .project-images {
+     display: flex;
+     gap: 20px;
+     flex-wrap: wrap;
+ }
+ .project-features {
+     list-style-type: disc;       /* Ensures a standard bullet point */
+     padding-left: 40px;          /* Add some indentation for bullets */
+     margin-bottom: 30px;         /* Spacing after the list */
+ }
+ 
+ .project-features li {
+     margin-bottom: 10px;         /* Spacing between bullet points */
+     font-size: 1rem;             /* Adjust text size if needed */
+     color: #444;                 /* Text color */
+ }
+
+ .more-button {
+     display: inline-block;
+     background: #333;         /* GitHub-like dark background */
+     color: #fff;              /* White text */
+     padding: 10px 20px;       /* Space around the text */
+     text-decoration: none;    /* Remove underline */
+     border-radius: 4px;       /* Slightly rounded corners */
+     font-weight: bold;
+     margin-top: 20px;         /* Spacing above the button */
+     transition: background 0.3s ease;
+ }
+ 
+ .more-button:hover {
+     background: #444;         /* Slightly lighter on hover */
+ }
+ 
+ 
+ 
+ .thumbnail {
+     width: 100px;
+     height: auto;
+     cursor: pointer;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     transition: transform 0.2s ease;
+ }
+ 
+ .thumbnail:hover {
+     transform: scale(1.05);
+ }
+ 
+ 
+
+ .overlay {
+     position: fixed;
+     top: 0; left: 0;
+     width: 100%; height: 100%;
+     background: rgba(0, 0, 0, 0.8);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     visibility: hidden;
+     opacity: 0;
+     transition: opacity 0.3s ease, visibility 0.3s ease;
+     z-index: 9999;
+ }
+ 
+ .overlay img {
+     max-width: 90%;
+     max-height: 80%;
+ }
+ 
+ .thumbnail {
+     width: 120px;
+     height: auto;
+     cursor: pointer;
+     border: 2px solid #ccc;
+     border-radius: 5px;
+     transition: transform 0.2s ease;
+ }
+ 
+ .thumbnail:hover {
+     transform: scale(1.05);
+ }
+ 
+ .overlay.show {
+     visibility: visible;
+     opacity: 1;
+ }
+ 
+
+
+ 
