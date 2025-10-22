@@ -109,12 +109,14 @@
      border: none;
      margin: 20px 0;
  }
- 
- .headshot {
-     width: 20%; /* Adjust width as needed */
-     border-radius: 50%; /* Makes it circular if the image is square */
-     margin-bottom: 20px;
- }
+
+.headshot {
+  width: 20%;          /* Set fixed size, or use responsive units */
+  aspect-ratio: 1 / 1;   /* Ensures square shape */
+  border-radius: 50%;    /* Perfect circle */
+  object-fit: cover;     /* Zooms/crops to fill the circle */
+  margin-bottom: 20px;
+}
 
 
  
