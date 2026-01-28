@@ -24,7 +24,7 @@
           <img src="imgs/Headshot3.jpg" alt="My headshot" class="headshot" />
           <h1>Daniel Cha</h1> 
           <div class="contact-info">
-            <p>Email: kwonryuc [AT] andrew [DOT] cmu [DOT] edu</p>
+            <p>Email: <img src="imgs/email.jpg" alt="Email" class="contact-icon" style="height: 3em; width: auto; vertical-align: middle;" /></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/danielcha0131/" target="_blank">danielcha0131</a></p>
         </div>
         <hr/>
@@ -72,7 +72,20 @@
     <h2>Projects</h2>
     <hr/>
 
-    <!-- Project 1 -->
+    <div class="project-item">
+        <h3 class="project-title">BrowTool</h3>
+        <p class="project-description">
+            BrowTool turns fragile browser automation into stable, tool-based agents:
+            (Record browser actions → Generate MCP tools → Run reliably with agents)
+        </p>
+        <ul class="project-features">
+            <li>Records browser actions and compiles them into deterministic MCP tools.</li>
+            <li>Integrates with LLM agents with MCP support allowing auditable browser functionality.</li>
+        </ul>
+        <a href="https://devpost.com/software/mdr#updates" target="_blank" class="more-button">View on Devpost</a>
+    </div>
+
+
     <div class="project-item">
         <h3 class="project-title">Train of Thought</h3>
         <p class="project-description">
@@ -90,7 +103,6 @@
         <a href="https://cmu.app.box.com/s/xdaft9t8l1v9yvsfsb5evv2p1jfj0t43" target="_blank" class="more-button">View Slide Show</a>
     </div>
 
-    <!-- Project 2 -->
     <div class="project-item">
         <h3 class="project-title">Pro-Load</h3>
         <p class="project-description">
@@ -108,7 +120,6 @@
         <a href="https://github.com/dcha7225/Pro-Load" target="_blank" class="more-button">View on GitHub</a>
     </div>
 
-    <!-- Project 3 -->
     <div class="project-item">
         <h3 class="project-title">NutroPNG</h3>
         <p class="project-description">
@@ -151,8 +162,30 @@
     <section id="interests">
         <h2>Interests</h2>
         <hr/>
-        <p>Learning fly fishing, avid skiier and wake surfer, ex-hockey player, lover of my dog max the poodle.</p>
-        <p>Message me, if you're in the area, I'd love to meet more people!</p>
+        
+        <div class="interest-item">
+            <h3>Fly Fishing</h3>
+            <p><strong>Tally:</strong> Trout - 1</p>
+        </div>
+
+        <div class="interest-item">
+            <h3>Skiing</h3>
+            <p><strong>Favorite Resort:</strong> Stowe</p>
+            <p><strong>Visited:</strong>
+                <ul style="margin-left: 3rem; margin-top: -1rem;">
+                    <li><strong>Vermont:</strong> Stowe, Jay Peak</li>
+                    <li><strong>PA:</strong> Blue Knob, Roundtop</li>
+                    <li><strong>Canada:</strong> Mont Tremblant, Mont Orford</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="interest-item">
+            <h3>Fitness</h3>
+            <p><strong>Currently Training For:</strong> PGH Marathon 2026</p>
+        </div>
+
+        <p style="margin-top: 2rem; font-style: italic;">Message me if you're in the area—I'd love to meet more people!</p>
 
     </section>
 
