@@ -2,206 +2,290 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="My Portfolio"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+        name="description"
+        content="Daniel Cha is a Carnegie Mellon computer science student building thoughtful software across AI, tooling, and product engineering."
+    />
     <title>Daniel Cha</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500;600;700;800&amp;family=Newsreader:opsz,wght@6..72,400;500;600&amp;display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-    <header>
-        <nav>
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Primary">
+            <a class="site-mark" href="#home">Daniel Cha</a>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#experiences">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#interests">Interests</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home">
-          <img src="imgs/Headshot3.jpg" alt="My headshot" class="headshot" />
-          <h1>Daniel Cha</h1> 
-          <div class="contact-info">
-            <p>Email: <img src="imgs/email.jpg" alt="Email" class="contact-icon" style="height: 3em; width: auto; vertical-align: middle;" /></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/danielcha0131/" target="_blank">danielcha0131</a></p>
-        </div>
-        <hr/>
-        <p>A Computer Science Student at Carnegie Mellon University</p>
-    </section>
+    <main class="page-shell">
+        <section id="home" class="hero-section">
+            <p class="section-label">Portfolio</p>
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <h1 class="hero-title">
+                        <span>Daniel</span>
+                        <span>Cha</span>
+                    </h1>
+                </div>
 
-    <section id="experiences">
-     <h2>Experiences</h2>
-     <hr/>
- 
-    
-    <div class="experience-item">
-        <img src="imgs/exps/tiktok.png" alt="Company 3 logo" />
-        <div class="experience-text">
-            <div class="company">TikTok</div>
-            <div class="details">Software Engineering Intern |  August 2025 - November 2025</div>
-        </div>
-    </div> 
+                <aside class="hero-aside">
+                    <img src="imgs/Headshot3.jpg" alt="Portrait of Daniel Cha" class="headshot" />
+                    <div class="contact-list">
+                        <div class="contact-row">
+                            <span>Email</span>
+                            <img src="imgs/email.jpg" alt="Daniel Cha email address" class="contact-icon" />
+                        </div>
+                        <div class="contact-row">
+                            <span>LinkedIn</span>
+                            <a href="https://www.linkedin.com/in/danielcha0131/" target="_blank" rel="noreferrer">
+                                danielcha0131
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
 
-    <div class="experience-item">
-        <img src="imgs/exps/aws.png" alt="Company 1 logo" />
-        <div class="experience-text">
-            <div class="company">Amazon Web Services</div>
-            <div class="details">ML/AI Software Development Intern | May 2025 - August 2025</div>
-        </div>  
-    </div>    
+        <section id="experiences" class="content-section">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">Selected Work</p>
+                    <h2>Experience</h2>
+                </div>
+            </div>
 
-     <div class="experience-item">
-         <img src="imgs/exps/nygc.png" alt="Company 2 logo" />
-         <div class="experience-text">
-            <div class="company">New York Genome Center</div>
-            <div class="details">Software Engineering Intern | June 2024 - August 2024</div>
-        </div>      
-    </div>      
-     <div class="experience-item">
-        <img src="imgs/exps/cb.png" alt="Company 1 logo" />
-        <div class="experience-text">
-            <div class="company">CMU Computational Biology</div>
-            <div class="details">Computational Biology Researcher | Aug 2023 - April 2024</div>
-        </div>  
-    </div>    
- </section>
- 
- <section id="projects">
-    <h2>Projects</h2>
-    <hr/>
+            <div class="entry-list">
+                <article class="experience-entry">
+                    <img src="imgs/exps/tiktok.png" alt="TikTok logo" />
+                    <div class="entry-copy">
+                        <div class="entry-head">
+                            <h3>TikTok</h3>
+                            <p class="entry-meta">August 2025 - November 2025</p>
+                        </div>
+                        <p>Software Engineering Intern</p>
+                    </div>
+                </article>
 
-    <div class="project-item">
-        <h3 class="project-title">BrowTool</h3>
-        <p class="project-description">
-            BrowTool turns fragile browser automation into stable, tool-based agents:
-            (Record browser actions → Generate MCP tools → Run reliably with agents)
-        </p>
-        <ul class="project-features">
-            <li>Records browser actions and compiles them into deterministic MCP tools.</li>
-            <li>Integrates with LLM agents with MCP support allowing auditable browser functionality.</li>
-        </ul>
-        <a href="https://devpost.com/software/mdr#updates" target="_blank" class="more-button">View on Devpost</a>
-    </div>
+                <article class="experience-entry">
+                    <img src="imgs/exps/aws.png" alt="Amazon Web Services logo" />
+                    <div class="entry-copy">
+                        <div class="entry-head">
+                            <h3>Amazon Web Services</h3>
+                            <p class="entry-meta">May 2025 - August 2025</p>
+                        </div>
+                        <p>ML/AI Software Development Intern</p>
+                    </div>
+                </article>
 
+                <article class="experience-entry">
+                    <img src="imgs/exps/nygc.png" alt="New York Genome Center logo" />
+                    <div class="entry-copy">
+                        <div class="entry-head">
+                            <h3>New York Genome Center</h3>
+                            <p class="entry-meta">June 2024 - August 2024</p>
+                        </div>
+                        <p>Software Engineering Intern</p>
+                    </div>
+                </article>
 
-    <div class="project-item">
-        <h3 class="project-title">Train of Thought</h3>
-        <p class="project-description">
-            A multi-agent LLM system capable of chain-of-thought reasoning and recursive sub-problem validation with Google Gemini.			
-        </p>
-        <ul class="project-features">
-            <li>Designed an API for integrating chain-of-thought reasoning generically for all LLMs.</li>
-            <li>Deployed online and found increased performance of complex reasoning and programming tasks.</li>
-        </ul>
-        <div class="project-images">
-            <img src="imgs/tot/ex.jpeg" alt="Thumbnail 1" class="thumbnail" onclick="openOverlay('overlay1')">
-            <img src="imgs/tot/model.jpeg" alt="Thumbnail 2" class="thumbnail" onclick="openOverlay('overlay2')">
-        </div>
-        <a href="https://github.com/dcha7225/Train-of-Thought" target="_blank" class="more-button">View on GitHub</a>
-        <a href="https://cmu.app.box.com/s/xdaft9t8l1v9yvsfsb5evv2p1jfj0t43" target="_blank" class="more-button">View Slide Show</a>
-    </div>
+                <article class="experience-entry">
+                    <img src="imgs/exps/cb.png" alt="CMU Computational Biology logo" />
+                    <div class="entry-copy">
+                        <div class="entry-head">
+                            <h3>CMU Computational Biology</h3>
+                            <p class="entry-meta">August 2023 - April 2024</p>
+                        </div>
+                        <p>Computational Biology Researcher</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <div class="project-item">
-        <h3 class="project-title">Pro-Load</h3>
-        <p class="project-description">
-            Built a mobile fitness tracking app that suggests optimal plans for progression.
-        </p>
-        <ul class="project-features">
-            <li>Developed an algorithm to suggest optimal weights for lifts based on user history.</li>
-            <li>Implemented dynamic figures to track progress.</li>
-        </ul>
-        <div class="project-images">
-            <img src="imgs/proload/mainpage.png" alt="Thumbnail 3" class="thumbnail" onclick="openOverlay('overlay3')">
-            <img src="imgs/proload/journal.png" alt="Thumbnail 4" class="thumbnail" onclick="openOverlay('overlay4')">
-            <img src="imgs/proload/graph.png" alt="Thumbnail 5" class="thumbnail" onclick="openOverlay('overlay5')">
-        </div>
-        <a href="https://github.com/dcha7225/Pro-Load" target="_blank" class="more-button">View on GitHub</a>
-    </div>
+        <section id="projects" class="content-section">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">Things I Built</p>
+                    <h2>Projects</h2>
+                </div>
+                <p class="section-intro">
+                    A few systems and products that show how I like to work.
+                </p>
+            </div>
 
-    <div class="project-item">
-        <h3 class="project-title">NutroPNG</h3>
-        <p class="project-description">
-            Built a web app that employs Google Vision to process images and identify foods to generate nutrition facts.
-        </p>
-        <ul class="project-features">
-            <li>Won Top 3 Hacks award at McHacks 10 (A hackathon consisting of 400 participants from all over Canada).</li>
-        </ul>
-        <div class="project-images">
-            <img src="imgs/nutropng/apple.jpg" alt="Thumbnail 6" class="thumbnail" onclick="openOverlay('overlay6')">
-            <img src="imgs/nutropng/bannana.jpg" alt="Thumbnail 7" class="thumbnail" onclick="openOverlay('overlay7')">
-        </div>
-        <a href="https://github.com/LawrenceLiang02/McHacks10-backend" target="_blank" class="more-button">View on GitHub</a>
-    </div>
+            <div class="project-list">
+                <article class="project-entry">
+                    <div class="entry-head">
+                        <h3>BrowTool</h3>
+                        <div class="project-links">
+                            <a href="https://devpost.com/software/mdr#updates" target="_blank" rel="noreferrer">
+                                Devpost
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        BrowTool turns fragile browser automation into stable, tool-based
+                        agents: record browser actions, generate MCP tools, and run them
+                        reliably with LLM workflows.
+                    </p>
+                    <ul class="project-features">
+                        <li>Records browser actions and compiles them into deterministic MCP tools.</li>
+                        <li>Integrates with LLM agents with MCP support for auditable browser functionality.</li>
+                    </ul>
+                </article>
 
-    <!-- Overlays -->
-    <div id="overlay1" class="overlay" onclick="closeOverlay(event)">
-        <img src="imgs/tot/ex.jpeg" alt="Large Image 1" class="enlarged-image">
-    </div>
-    <div id="overlay2" class="overlay" onclick="closeOverlay(event)">
-        <img src="imgs/tot/model.jpeg" alt="Large Image 2" class="enlarged-image">
-    </div>
-    <div id="overlay3" class="overlay" onclick="closeOverlay(event)">
-        <img src="imgs/proload/mainpage.png" alt="Large Image 3" class="enlarged-image">
-    </div>
-    <div id="overlay4" class="overlay" onclick="closeOverlay(event)">
-        <img src="imgs/proload/journal.png" alt="Large Image 4" class="enlarged-image">
-    </div>
-    <div id="overlay5" class="overlay" onclick="closeOverlay(event)">
-        <img src="imgs/proload/graph.png" alt="Large Image 5" class="enlarged-image">
-    </div>
-    <div id="overlay6" class="overlay" onclick="closeOverlay(event)">
-        <img src="imgs/nutropng/apple.jpg" alt="Large Image 6" class="enlarged-image">
-    </div>
-    <div id="overlay7" class="overlay" onclick="closeOverlay(event)">
-        <img src="imgs/nutropng/bannana.jpg" alt="Large Image 7" class="enlarged-image">
-    </div>
-</section>
+                <article class="project-entry">
+                    <div class="entry-head">
+                        <h3>Train of Thought</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/dcha7225/Train-of-Thought" target="_blank" rel="noreferrer">
+                                GitHub
+                            </a>
+                            <a href="https://cmu.app.box.com/s/xdaft9t8l1v9yvsfsb5evv2p1jfj0t43" target="_blank" rel="noreferrer">
+                                Slides
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        A multi-agent LLM system capable of chain-of-thought reasoning and
+                        recursive sub-problem validation with Google Gemini.
+                    </p>
+                    <ul class="project-features">
+                        <li>Designed an API for integrating chain-of-thought reasoning generically for all LLMs.</li>
+                        <li>Deployed online and improved performance on complex reasoning and programming tasks.</li>
+                    </ul>
+                    <div class="project-images">
+                        <img src="imgs/tot/ex.jpeg" alt="Train of Thought example" class="thumbnail" onclick="openOverlay('overlay1')" />
+                        <img src="imgs/tot/model.jpeg" alt="Train of Thought model diagram" class="thumbnail" onclick="openOverlay('overlay2')" />
+                    </div>
+                </article>
 
-    <section id="interests">
-        <h2>Interests</h2>
-        <hr/>
-        
-        <div class="interest-item">
-            <h3>Fly Fishing</h3>
-            <p><strong>Tally:</strong> Trout - 1</p>
-        </div>
+                <article class="project-entry">
+                    <div class="entry-head">
+                        <h3>Pro-Load</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/dcha7225/Pro-Load" target="_blank" rel="noreferrer">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        A mobile fitness app that suggests better progression plans using
+                        workout history and adaptive recommendations.
+                    </p>
+                    <ul class="project-features">
+                        <li>Developed an algorithm to suggest optimal weights for lifts based on user history.</li>
+                        <li>Implemented dynamic figures to track progress over time.</li>
+                    </ul>
+                    <div class="project-images">
+                        <img src="imgs/proload/mainpage.png" alt="Pro-Load main page" class="thumbnail" onclick="openOverlay('overlay3')" />
+                        <img src="imgs/proload/journal.png" alt="Pro-Load journal view" class="thumbnail" onclick="openOverlay('overlay4')" />
+                        <img src="imgs/proload/graph.png" alt="Pro-Load graph view" class="thumbnail" onclick="openOverlay('overlay5')" />
+                    </div>
+                </article>
 
-        <div class="interest-item">
-            <h3>Skiing</h3>
-            <p><strong>Favorite Resort:</strong> Stowe</p>
-            <p><strong>Visited:</strong>
-                <ul style="margin-left: 3rem; margin-top: -1rem;">
-                    <li><strong>Vermont:</strong> Stowe, Jay Peak</li>
-                    <li><strong>PA:</strong> Blue Knob, Roundtop</li>
-                    <li><strong>Canada:</strong> Mont Tremblant, Mont Orford</li>
-                </ul>
+                <article class="project-entry">
+                    <div class="entry-head">
+                        <h3>NutroPNG</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/LawrenceLiang02/McHacks10-backend" target="_blank" rel="noreferrer">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        A computer-vision-powered web app that identifies food from images
+                        and generates nutrition facts using Google Vision.
+                    </p>
+                    <ul class="project-features">
+                        <li>Won a Top 3 Hacks award at McHacks 10 among 400 participants.</li>
+                    </ul>
+                    <div class="project-images">
+                        <img src="imgs/nutropng/apple.jpg" alt="NutroPNG apple detection" class="thumbnail" onclick="openOverlay('overlay6')" />
+                        <img src="imgs/nutropng/bannana.jpg" alt="NutroPNG banana detection" class="thumbnail" onclick="openOverlay('overlay7')" />
+                    </div>
+                </article>
+            </div>
+
+            <div id="overlay1" class="overlay" onclick="closeOverlay(event)">
+                <img src="imgs/tot/ex.jpeg" alt="Large Train of Thought example" class="enlarged-image" />
+            </div>
+            <div id="overlay2" class="overlay" onclick="closeOverlay(event)">
+                <img src="imgs/tot/model.jpeg" alt="Large Train of Thought model diagram" class="enlarged-image" />
+            </div>
+            <div id="overlay3" class="overlay" onclick="closeOverlay(event)">
+                <img src="imgs/proload/mainpage.png" alt="Large Pro-Load main page" class="enlarged-image" />
+            </div>
+            <div id="overlay4" class="overlay" onclick="closeOverlay(event)">
+                <img src="imgs/proload/journal.png" alt="Large Pro-Load journal view" class="enlarged-image" />
+            </div>
+            <div id="overlay5" class="overlay" onclick="closeOverlay(event)">
+                <img src="imgs/proload/graph.png" alt="Large Pro-Load graph view" class="enlarged-image" />
+            </div>
+            <div id="overlay6" class="overlay" onclick="closeOverlay(event)">
+                <img src="imgs/nutropng/apple.jpg" alt="Large NutroPNG apple detection" class="enlarged-image" />
+            </div>
+            <div id="overlay7" class="overlay" onclick="closeOverlay(event)">
+                <img src="imgs/nutropng/bannana.jpg" alt="Large NutroPNG banana detection" class="enlarged-image" />
+            </div>
+        </section>
+
+        <section id="interests" class="content-section">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">Outside of Work</p>
+                    <h2>Interests</h2>
+                </div>
+                <p class="section-intro">
+                    The things I tend to spend time thinking about when I am away from a screen.
+                </p>
+            </div>
+
+            <div class="interest-grid">
+                <article class="interest-entry">
+                    <h3>Fly Fishing</h3>
+                    <p>Usually looking for a quiet river and a reason to stay outside a little longer.</p>
+                </article>
+
+                <article class="interest-entry">
+                    <h3>Skiing</h3>
+                    <p><strong>Favorite resort:</strong> Stowe</p>
+                    <p><strong>Visited:</strong> Stowe, Jay Peak, Blue Knob, Roundtop, Mont Tremblant, Mont Orford</p>
+                </article>
+
+                <article class="interest-entry">
+                    <h3>Fitness</h3>
+                    <p><strong>Currently training for:</strong> Pittsburgh Marathon 2026</p>
+                </article>
+            </div>
+
+            <p class="closing-note">
+                Message me if you are in the area. I am always up for meeting thoughtful people building interesting things.
             </p>
-        </div>
+        </section>
+    </main>
 
-        <div class="interest-item">
-            <h3>Fitness</h3>
-            <p><strong>Currently Training For:</strong> PGH Marathon 2026</p>
-        </div>
-
-        <p style="margin-top: 2rem; font-style: italic;">Message me if you're in the area—I'd love to meet more people!</p>
-
-    </section>
-
-</body>
-
-<script>
-    function openOverlay(id) {
-        document.getElementById(id).classList.add("show");
-    }
-
-    function closeOverlay(event) {
-        if (event.target.classList.contains("overlay")) {
-            event.target.classList.remove("show");
+    <script>
+        function openOverlay(id) {
+            document.getElementById(id).classList.add("show");
         }
-    }
-</script>
 
+        function closeOverlay(event) {
+            if (event.target.classList.contains("overlay")) {
+                event.target.classList.remove("show");
+            }
+        }
+    </script>
+</body>
 </html>
-
