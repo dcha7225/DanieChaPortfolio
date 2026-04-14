@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500;600;700;800&amp;family=Newsreader:opsz,wght@6..72,400;500;600&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap"
         rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -24,24 +24,25 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#experiences">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#interests">Interests</a></li>
+                <li><a href="#interests">Life</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="page-shell">
         <section id="home" class="hero-section">
-            <p class="section-label">Portfolio</p>
-            <div class="hero-grid">
+            <div class="hero-layout">
                 <div class="hero-copy">
-                    <h1 class="hero-title">
-                        <span>Daniel</span>
-                        <span>Cha</span>
-                    </h1>
-                </div>
+                    <p class="hero-name">Daniel Cha</p>
+                    <p class="hero-summary">
+                        I'm interested in builing the most capable agentic systems. CS CMU 2026
+                    </p>
 
-                <aside class="hero-aside">
-                    <img src="imgs/Headshot3.jpg" alt="Portrait of Daniel Cha" class="headshot" />
+                    <figure class="hero-figure">
+                        <img src="imgs/nature/IMG_7989.jpeg" alt="Highway 1 in California" class="hero-image" />
+                        <figcaption class="hero-note">Highway 1 -- California</figcaption>
+                    </figure>
+
                     <div class="contact-list">
                         <div class="contact-row">
                             <span>Email</span>
@@ -54,7 +55,7 @@
                             </a>
                         </div>
                     </div>
-                </aside>
+                </div>
             </div>
         </section>
 
@@ -119,9 +120,7 @@
                     <p class="section-label">Things I Built</p>
                     <h2>Projects</h2>
                 </div>
-                <p class="section-intro">
-                    A few systems and products that show how I like to work.
-                </p>
+                <p class="section-intro">A few things I am proud of.</p>
             </div>
 
             <div class="project-list">
@@ -135,13 +134,11 @@
                         </div>
                     </div>
                     <p class="project-description">
-                        BrowTool turns fragile browser automation into stable, tool-based
-                        agents: record browser actions, generate MCP tools, and run them
-                        reliably with LLM workflows.
+                        Browser actions recorded once, turned into reliable MCP tools for agents.
                     </p>
                     <ul class="project-features">
-                        <li>Records browser actions and compiles them into deterministic MCP tools.</li>
-                        <li>Integrates with LLM agents with MCP support for auditable browser functionality.</li>
+                        <li>Records browser flows and compiles them into deterministic tools.</li>
+                        <li>Built for LLM workflows that need reliable browser control.</li>
                     </ul>
                 </article>
 
@@ -158,12 +155,11 @@
                         </div>
                     </div>
                     <p class="project-description">
-                        A multi-agent LLM system capable of chain-of-thought reasoning and
-                        recursive sub-problem validation with Google Gemini.
+                        A multi-agent LLM system for recursive reasoning and validation.
                     </p>
                     <ul class="project-features">
-                        <li>Designed an API for integrating chain-of-thought reasoning generically for all LLMs.</li>
-                        <li>Deployed online and improved performance on complex reasoning and programming tasks.</li>
+                        <li>Designed a generic API for chain-of-thought style reasoning across models.</li>
+                        <li>Improved performance on complex reasoning and programming tasks.</li>
                     </ul>
                     <div class="project-images">
                         <img src="imgs/tot/ex.jpeg" alt="Train of Thought example" class="thumbnail" onclick="openOverlay('overlay1')" />
@@ -181,12 +177,11 @@
                         </div>
                     </div>
                     <p class="project-description">
-                        A mobile fitness app that suggests better progression plans using
-                        workout history and adaptive recommendations.
+                        A fitness app with adaptive progression plans based on workout history.
                     </p>
                     <ul class="project-features">
-                        <li>Developed an algorithm to suggest optimal weights for lifts based on user history.</li>
-                        <li>Implemented dynamic figures to track progress over time.</li>
+                        <li>Suggested lift weights from prior sessions and trends.</li>
+                        <li>Tracked progress with dynamic charts and summaries.</li>
                     </ul>
                     <div class="project-images">
                         <img src="imgs/proload/mainpage.png" alt="Pro-Load main page" class="thumbnail" onclick="openOverlay('overlay3')" />
@@ -205,11 +200,10 @@
                         </div>
                     </div>
                     <p class="project-description">
-                        A computer-vision-powered web app that identifies food from images
-                        and generates nutrition facts using Google Vision.
+                        Computer vision that identifies food and generates nutrition facts.
                     </p>
                     <ul class="project-features">
-                        <li>Won a Top 3 Hacks award at McHacks 10 among 400 participants.</li>
+                        <li>Won a Top 3 Hacks award at McHacks 10.</li>
                     </ul>
                     <div class="project-images">
                         <img src="imgs/nutropng/apple.jpg" alt="NutroPNG apple detection" class="thumbnail" onclick="openOverlay('overlay6')" />
@@ -245,34 +239,60 @@
             <div class="section-heading">
                 <div>
                     <p class="section-label">Outside of Work</p>
-                    <h2>Interests</h2>
+                    <h2>Life Lately</h2>
                 </div>
-                <p class="section-intro">
-                    The things I tend to spend time thinking about when I am away from a screen.
-                </p>
+                <p class="section-intro">A little more of what I am up to off-screen.</p>
             </div>
 
-            <div class="interest-grid">
-                <article class="interest-entry">
-                    <h3>Fly Fishing</h3>
-                    <p>Usually looking for a quiet river and a reason to stay outside a little longer.</p>
+            <div class="story-grid">
+                <article class="story-panel story-panel-family">
+                    <div class="story-copy">
+                        <p class="story-kicker">Family</p>
+                        <h3>Home base.</h3>
+                    </div>
+                    <div class="story-media-grid">
+                        <img src="imgs/family/IMG_0774.jpeg" alt="Daniel Cha with family" class="story-shot" />
+                        <img src="imgs/family/IMG_2971.jpeg" alt="Daniel Cha with family outdoors" class="story-shot" />
+                        <img src="imgs/family/IMG_9335.jpeg" alt="Daniel Cha with family portrait" class="story-shot" />
+                    </div>
                 </article>
 
-                <article class="interest-entry">
-                    <h3>Skiing</h3>
-                    <p><strong>Favorite resort:</strong> Stowe</p>
-                    <p><strong>Visited:</strong> Stowe, Jay Peak, Blue Knob, Roundtop, Mont Tremblant, Mont Orford</p>
+                <article class="story-panel story-panel-golf">
+                    <div class="story-copy">
+                        <p class="story-kicker">Golf</p>
+                        <h3>Walking rounds.</h3>
+                    </div>
+                    <div class="story-media-grid story-media-grid-duo">
+                        <img src="imgs/golf/IMG_0219.jpeg" alt="Daniel Cha golfing" class="story-shot" />
+                        <img src="imgs/golf/IMG_3815.jpeg" alt="Golf course view" class="story-shot" />
+                    </div>
                 </article>
 
-                <article class="interest-entry">
-                    <h3>Fitness</h3>
-                    <p><strong>Currently training for:</strong> Pittsburgh Marathon 2026</p>
+                <article class="story-panel story-panel-wakesurf">
+                    <div class="story-copy">
+                        <p class="story-kicker">Wakesurf</p>
+                        <h3>Summer energy.</h3>
+                    </div>
+                    <video class="story-video" autoplay muted loop playsinline controls>
+                        <source src="imgs/wakesurf/IMG_2595.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </article>
+
+                <article class="story-panel story-panel-ski">
+                    <div class="story-copy">
+                        <p class="story-kicker">Ski</p>
+                        <h3>Winter version.</h3>
+                    </div>
+                    <div class="story-ski-grid">
+                        <img src="imgs/ski/IMG_6179.jpeg" alt="Daniel Cha skiing" class="story-shot" />
+                        <video class="story-video story-video-compact" autoplay muted loop playsinline controls>
+                            <source src="imgs/ski/trimmedGX010105-web.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </article>
             </div>
-
-            <p class="closing-note">
-                Message me if you are in the area. I am always up for meeting thoughtful people building interesting things.
-            </p>
         </section>
     </main>
 
