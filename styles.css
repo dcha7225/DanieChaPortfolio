@@ -266,6 +266,13 @@ h2 {
     gap: 1rem;
 }
 
+.project-title-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
 h3 {
     font-size: 1.1rem;
     letter-spacing: -0.04em;
@@ -305,6 +312,23 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     gap: 0.9rem;
+}
+
+.project-video {
+    margin-top: 1.25rem;
+    width: min(520px, 100%);
+    aspect-ratio: 16 / 9;
+    border: 1px solid var(--line);
+    border-radius: 1rem;
+    overflow: hidden;
+    background: #000000;
+    box-shadow: 0 10px 25px rgba(47, 79, 77, 0.08);
+}
+
+.project-video iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 .thumbnail {
