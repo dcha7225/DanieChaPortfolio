@@ -250,7 +250,7 @@ h2 {
     object-fit: contain;
     border: 1px solid var(--line);
     border-radius: 1rem;
-    background: rgba(255, 255, 255, 0.45);
+    background: #ffffff;
 }
 
 .entry-copy p,
