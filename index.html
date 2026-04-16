@@ -14,6 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap"
         rel="stylesheet"
     />
+    <link rel="preload" as="image" href="imgs/optimized/hero/highway-1.webp" fetchpriority="high" />
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -39,14 +40,30 @@
                     </p>
 
                     <figure class="hero-figure">
-                        <img src="imgs/nature/IMG_7989.jpeg" alt="Highway 1 in California" class="hero-image" />
+                        <img
+                            src="imgs/optimized/hero/highway-1.webp"
+                            alt="Highway 1 in California"
+                            class="hero-image"
+                            width="1240"
+                            height="726"
+                            fetchpriority="high"
+                            decoding="async"
+                        />
                         <figcaption class="hero-note">Highway 1 -- California</figcaption>
                     </figure>
 
                     <div class="contact-list">
                         <div class="contact-row">
                             <span>Email</span>
-                            <img src="imgs/email.jpg" alt="Daniel Cha email address" class="contact-icon" />
+                            <img
+                                src="imgs/optimized/email.webp"
+                                alt="Daniel Cha email address"
+                                class="contact-icon"
+                                width="640"
+                                height="151"
+                                loading="lazy"
+                                decoding="async"
+                            />
                         </div>
                         <div class="contact-row">
                             <span>LinkedIn</span>
@@ -69,7 +86,7 @@
 
             <div class="entry-list">
                 <article class="experience-entry">
-                    <img src="imgs/exps/tiktok.png" alt="TikTok logo" />
+                    <img src="imgs/exps/tiktok.png" alt="TikTok logo" width="120" height="74" loading="lazy" decoding="async" />
                     <div class="entry-copy">
                         <div class="entry-head">
                             <h3>TikTok</h3>
@@ -80,7 +97,7 @@
                 </article>
 
                 <article class="experience-entry">
-                    <img src="imgs/exps/aws.png" alt="Amazon Web Services logo" />
+                    <img src="imgs/exps/aws.png" alt="Amazon Web Services logo" width="120" height="74" loading="lazy" decoding="async" />
                     <div class="entry-copy">
                         <div class="entry-head">
                             <h3>Amazon Web Services</h3>
@@ -91,7 +108,7 @@
                 </article>
 
                 <article class="experience-entry">
-                    <img src="imgs/exps/nygc.png" alt="New York Genome Center logo" />
+                    <img src="imgs/exps/nygc.png" alt="New York Genome Center logo" width="120" height="74" loading="lazy" decoding="async" />
                     <div class="entry-copy">
                         <div class="entry-head">
                             <h3>New York Genome Center</h3>
@@ -102,7 +119,7 @@
                 </article>
 
                 <article class="experience-entry">
-                    <img src="imgs/exps/cb.png" alt="CMU Computational Biology logo" />
+                    <img src="imgs/exps/cb.png" alt="CMU Computational Biology logo" width="120" height="74" loading="lazy" decoding="async" />
                     <div class="entry-copy">
                         <div class="entry-head">
                             <h3>CMU Computational Biology</h3>
@@ -143,15 +160,21 @@
                         <li>Records browser flows and compiles them into deterministic tools.</li>
                         <li>Built for LLM workflows that need reliable browser control.</li>
                     </ul>
-                    <div class="project-video">
-                        <iframe
-                            src="https://www.youtube.com/embed/dmapaHQ7Unk"
-                            title="BrowTool demo"
-                            loading="lazy"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen
-                        ></iframe>
+                    <div class="project-video project-video-shell">
+                        <button
+                            class="video-launch"
+                            type="button"
+                            data-embed-target="browtool-video"
+                            data-embed-src="https://www.youtube.com/embed/dmapaHQ7Unk?autoplay=1&amp;rel=0"
+                            aria-label="Play BrowTool demo"
+                        >
+                            <span class="video-launch-copy">
+                                <span class="video-launch-kicker">Demo</span>
+                                <span class="video-launch-title">Play BrowTool walkthrough</span>
+                            </span>
+                            <span class="video-launch-icon" aria-hidden="true">Play</span>
+                        </button>
+                        <div id="browtool-video" class="video-embed-slot"></div>
                     </div>
                 </article>
 
@@ -178,8 +201,12 @@
                         <li>Improved performance on complex reasoning and programming tasks.</li>
                     </ul>
                     <div class="project-images">
-                        <img src="imgs/tot/ex.jpeg" alt="Train of Thought example" class="thumbnail" onclick="openOverlay('overlay1')" />
-                        <img src="imgs/tot/model.jpeg" alt="Train of Thought model diagram" class="thumbnail" onclick="openOverlay('overlay2')" />
+                        <button class="thumbnail-button" type="button" data-overlay-src="imgs/tot/ex.jpeg" data-overlay-alt="Large Train of Thought example">
+                            <img src="imgs/tot/ex.jpeg" alt="Train of Thought example" class="thumbnail" loading="lazy" decoding="async" />
+                        </button>
+                        <button class="thumbnail-button" type="button" data-overlay-src="imgs/tot/model.jpeg" data-overlay-alt="Large Train of Thought model diagram">
+                            <img src="imgs/tot/model.jpeg" alt="Train of Thought model diagram" class="thumbnail" loading="lazy" decoding="async" />
+                        </button>
                     </div>
                 </article>
 
@@ -203,9 +230,15 @@
                         <li>Tracked progress with dynamic charts and summaries.</li>
                     </ul>
                     <div class="project-images">
-                        <img src="imgs/proload/mainpage.png" alt="Pro-Load main page" class="thumbnail" onclick="openOverlay('overlay3')" />
-                        <img src="imgs/proload/journal.png" alt="Pro-Load journal view" class="thumbnail" onclick="openOverlay('overlay4')" />
-                        <img src="imgs/proload/graph.png" alt="Pro-Load graph view" class="thumbnail" onclick="openOverlay('overlay5')" />
+                        <button class="thumbnail-button" type="button" data-overlay-src="imgs/proload/mainpage.png" data-overlay-alt="Large Pro-Load main page">
+                            <img src="imgs/proload/mainpage.png" alt="Pro-Load main page" class="thumbnail" loading="lazy" decoding="async" />
+                        </button>
+                        <button class="thumbnail-button" type="button" data-overlay-src="imgs/proload/journal.png" data-overlay-alt="Large Pro-Load journal view">
+                            <img src="imgs/proload/journal.png" alt="Pro-Load journal view" class="thumbnail" loading="lazy" decoding="async" />
+                        </button>
+                        <button class="thumbnail-button" type="button" data-overlay-src="imgs/proload/graph.png" data-overlay-alt="Large Pro-Load graph view">
+                            <img src="imgs/proload/graph.png" alt="Pro-Load graph view" class="thumbnail" loading="lazy" decoding="async" />
+                        </button>
                     </div>
                 </article>
 
@@ -228,32 +261,14 @@
                         <li>Won a Top 3 Hacks award at McHacks 10.</li>
                     </ul>
                     <div class="project-images">
-                        <img src="imgs/nutropng/apple.jpg" alt="NutroPNG apple detection" class="thumbnail" onclick="openOverlay('overlay6')" />
-                        <img src="imgs/nutropng/bannana.jpg" alt="NutroPNG banana detection" class="thumbnail" onclick="openOverlay('overlay7')" />
+                        <button class="thumbnail-button" type="button" data-overlay-src="imgs/nutropng/apple.jpg" data-overlay-alt="Large NutroPNG apple detection">
+                            <img src="imgs/nutropng/apple.jpg" alt="NutroPNG apple detection" class="thumbnail" loading="lazy" decoding="async" />
+                        </button>
+                        <button class="thumbnail-button" type="button" data-overlay-src="imgs/nutropng/bannana.jpg" data-overlay-alt="Large NutroPNG banana detection">
+                            <img src="imgs/nutropng/bannana.jpg" alt="NutroPNG banana detection" class="thumbnail" loading="lazy" decoding="async" />
+                        </button>
                     </div>
                 </article>
-            </div>
-
-            <div id="overlay1" class="overlay" onclick="closeOverlay(event)">
-                <img src="imgs/tot/ex.jpeg" alt="Large Train of Thought example" class="enlarged-image" />
-            </div>
-            <div id="overlay2" class="overlay" onclick="closeOverlay(event)">
-                <img src="imgs/tot/model.jpeg" alt="Large Train of Thought model diagram" class="enlarged-image" />
-            </div>
-            <div id="overlay3" class="overlay" onclick="closeOverlay(event)">
-                <img src="imgs/proload/mainpage.png" alt="Large Pro-Load main page" class="enlarged-image" />
-            </div>
-            <div id="overlay4" class="overlay" onclick="closeOverlay(event)">
-                <img src="imgs/proload/journal.png" alt="Large Pro-Load journal view" class="enlarged-image" />
-            </div>
-            <div id="overlay5" class="overlay" onclick="closeOverlay(event)">
-                <img src="imgs/proload/graph.png" alt="Large Pro-Load graph view" class="enlarged-image" />
-            </div>
-            <div id="overlay6" class="overlay" onclick="closeOverlay(event)">
-                <img src="imgs/nutropng/apple.jpg" alt="Large NutroPNG apple detection" class="enlarged-image" />
-            </div>
-            <div id="overlay7" class="overlay" onclick="closeOverlay(event)">
-                <img src="imgs/nutropng/bannana.jpg" alt="Large NutroPNG banana detection" class="enlarged-image" />
             </div>
         </section>
 
@@ -273,9 +288,9 @@
                         <h3>Home base.</h3>
                     </div>
                     <div class="story-media-grid">
-                        <img src="imgs/family/IMG_0774.jpeg" alt="Daniel Cha with family" class="story-shot" />
-                        <img src="imgs/family/IMG_2971.jpeg" alt="Daniel Cha with family outdoors" class="story-shot" />
-                        <img src="imgs/family/IMG_9335.jpeg" alt="Daniel Cha with family portrait" class="story-shot" />
+                        <img src="imgs/optimized/family/family-1.webp" alt="Daniel Cha with family" class="story-shot" width="900" height="1200" loading="lazy" decoding="async" />
+                        <img src="imgs/optimized/family/family-2.webp" alt="Daniel Cha with family outdoors" class="story-shot" width="900" height="675" loading="lazy" decoding="async" />
+                        <img src="imgs/optimized/family/family-3.webp" alt="Daniel Cha with family portrait" class="story-shot" width="900" height="1200" loading="lazy" decoding="async" />
                     </div>
                 </article>
 
@@ -285,8 +300,8 @@
                         <h3>Walking rounds.</h3>
                     </div>
                     <div class="story-media-grid story-media-grid-duo">
-                        <img src="imgs/golf/IMG_0219.jpeg" alt="Daniel Cha golfing" class="story-shot" />
-                        <img src="imgs/golf/IMG_3815.jpeg" alt="Golf course view" class="story-shot" />
+                        <img src="imgs/optimized/golf/golf-1.webp" alt="Daniel Cha golfing" class="story-shot" width="900" height="1200" loading="lazy" decoding="async" />
+                        <img src="imgs/optimized/golf/golf-2.webp" alt="Golf course view" class="story-shot" width="900" height="675" loading="lazy" decoding="async" />
                     </div>
                 </article>
 
@@ -295,8 +310,17 @@
                         <p class="story-kicker">Wakesurf</p>
                         <h3>Summer energy.</h3>
                     </div>
-                    <video class="story-video" autoplay muted loop playsinline controls>
-                        <source src="imgs/wakesurf/IMG_2595.mp4" type="video/mp4" />
+                    <video
+                        class="story-video deferred-video"
+                        muted
+                        loop
+                        playsinline
+                        controls
+                        preload="none"
+                        poster="imgs/optimized/wakesurf/wakesurf-poster.webp"
+                        data-autoplay="true"
+                    >
+                        <source src="imgs/optimized/wakesurf/wakesurf.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </article>
@@ -307,9 +331,18 @@
                         <h3>Winter version.</h3>
                     </div>
                     <div class="story-ski-grid">
-                        <img src="imgs/ski/IMG_6179.jpeg" alt="Daniel Cha skiing" class="story-shot" />
-                        <video class="story-video story-video-compact" autoplay muted loop playsinline controls>
-                            <source src="imgs/ski/trimmedGX010105-web.mp4" type="video/mp4" />
+                        <img src="imgs/optimized/ski/ski-portrait.webp" alt="Daniel Cha skiing" class="story-shot" width="900" height="1200" loading="lazy" decoding="async" />
+                        <video
+                            class="story-video story-video-compact deferred-video"
+                            muted
+                            loop
+                            playsinline
+                            controls
+                            preload="none"
+                            poster="imgs/optimized/ski/ski-poster.webp"
+                            data-autoplay="true"
+                        >
+                            <source src="imgs/optimized/ski/ski.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -318,15 +351,97 @@
         </section>
     </main>
 
+    <div id="mediaOverlay" class="overlay" aria-hidden="true">
+        <button class="overlay-close" type="button" aria-label="Close image viewer">Close</button>
+        <img id="overlayImage" alt="" class="enlarged-image" />
+    </div>
+
     <script>
-        function openOverlay(id) {
-            document.getElementById(id).classList.add("show");
+        const overlay = document.getElementById("mediaOverlay");
+        const overlayImage = document.getElementById("overlayImage");
+        const overlayClose = overlay.querySelector(".overlay-close");
+
+        document.querySelectorAll("[data-overlay-src]").forEach((button) => {
+            button.addEventListener("click", () => {
+                overlayImage.src = button.dataset.overlaySrc;
+                overlayImage.alt = button.dataset.overlayAlt || "";
+                overlay.classList.add("show");
+                overlay.setAttribute("aria-hidden", "false");
+            });
+        });
+
+        function closeOverlay() {
+            overlay.classList.remove("show");
+            overlay.setAttribute("aria-hidden", "true");
+            overlayImage.removeAttribute("src");
+            overlayImage.alt = "";
         }
 
-        function closeOverlay(event) {
-            if (event.target.classList.contains("overlay")) {
-                event.target.classList.remove("show");
+        overlay.addEventListener("click", (event) => {
+            if (event.target === overlay) {
+                closeOverlay();
             }
+        });
+
+        overlayClose.addEventListener("click", closeOverlay);
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && overlay.classList.contains("show")) {
+                closeOverlay();
+            }
+        });
+
+        document.querySelectorAll("[data-embed-src]").forEach((button) => {
+            button.addEventListener("click", () => {
+                const slot = document.getElementById(button.dataset.embedTarget);
+                const shell = button.closest(".project-video-shell");
+
+                if (!slot || slot.dataset.loaded === "true") {
+                    return;
+                }
+
+                const iframe = document.createElement("iframe");
+                iframe.src = button.dataset.embedSrc;
+                iframe.title = "BrowTool demo";
+                iframe.loading = "lazy";
+                iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.referrerPolicy = "strict-origin-when-cross-origin";
+                iframe.allowFullscreen = true;
+
+                slot.appendChild(iframe);
+                slot.dataset.loaded = "true";
+                if (shell) {
+                    shell.classList.add("is-loaded");
+                }
+                document.body.classList.add("demo-active");
+            });
+        });
+
+        const deferredVideos = document.querySelectorAll(".deferred-video");
+
+        if ("IntersectionObserver" in window) {
+            const videoObserver = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        const video = entry.target;
+
+                        if (entry.isIntersecting) {
+                            const playAttempt = video.play();
+                            if (playAttempt && typeof playAttempt.catch === "function") {
+                                playAttempt.catch(() => {});
+                            }
+                        } else {
+                            video.pause();
+                        }
+                    });
+                },
+                {
+                    rootMargin: "180px 0px",
+                    threshold: 0.35,
+                }
+            );
+
+            deferredVideos.forEach((video) => videoObserver.observe(video));
         }
     </script>
 </body>

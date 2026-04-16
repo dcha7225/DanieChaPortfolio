@@ -1,0 +1,12 @@
+{
+     "mcpServers": {
+       "project-design-planner": {
+         "command": "node",
+         "args": [
+           "/Users/danielcha/ArchitectV2/packages/mcp-server/dist/index.js",
+           "--workspace",
+           "/Users/danielcha/ArchitectV2"
+         ]
+       }
+     }
+   }
