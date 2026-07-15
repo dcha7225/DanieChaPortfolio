@@ -254,6 +254,11 @@ h2 {
     background: #ffffff;
 }
 
+.experience-entry img.logo-plain {
+    border: 0;
+    background: transparent;
+}
+
 .entry-copy p,
 .project-description,
 .project-features {
