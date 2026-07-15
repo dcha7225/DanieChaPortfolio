@@ -322,6 +322,33 @@ h3 {
     cursor: pointer;
 }
 
+.project-preview {
+    margin-top: 1.25rem;
+}
+
+.preview-button {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+    width: min(680px, 100%);
+}
+
+.preview-shot {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--line);
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(47, 79, 77, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.preview-button:hover .preview-shot {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 30px rgba(47, 79, 77, 0.14);
+}
+
 .project-video {
     margin-top: 1.25rem;
     width: min(520px, 100%);
